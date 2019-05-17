@@ -17,5 +17,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *registerBtn;
 @property (strong, nonatomic) IBOutlet UIButton *loginBtn;
 - (IBAction)pressLogin:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *identyBtn;
+- (IBAction)pressIdentyBtn:(id)sender;
 
 @end

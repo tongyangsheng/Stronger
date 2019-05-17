@@ -1,27 +1,31 @@
 //
-//  LoginViewController.m
+//  ManagerViewController.m
 //  Stronger
 //
-//  Created by 童阳升 on 2017/10/22.
-//  Copyright © 2017年 童阳升. All rights reserved.
+//  Created by game98 on 2019/5/16.
+//  Copyright © 2019 童阳升. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "ManagerViewController.h"
 
-@interface LoginViewController ()
+
+@interface ManagerViewController ()
 
 @end
 
-@implementation LoginViewController
+NSString* coachIdAll;
+
+@implementation ManagerViewController
 
 - (void)viewDidLoad {
+    
+    extern NSString* coachIdAll;
+    
+    coachIdAll=_nameTextField.text;
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 /*
@@ -34,13 +38,14 @@
 }
 */
 
-- (IBAction)pressLogin:(id)sender {
-    NSString* uName=@"11";
-    NSString* uPass=@"11";
+- (IBAction)pressLoginBtn:(id)sender {
+    NSString* uName=@"0";
+    
+    NSString* uPass=@"0";
     
     if ([_nameTextField.text isEqual:uName]&&[_passwordTextField.text isEqual:uPass]) {
         //从storyboard里面通过storyboardID取出对应的vc
-        UITableViewController *purple = [self.storyboard instantiateViewControllerWithIdentifier:@"homeVC"];
+        UITableViewController *purple = [self.storyboard instantiateViewControllerWithIdentifier:@"FirstVC"];
         [self presentViewController:purple animated:YES completion:nil];
         
     }
@@ -62,9 +67,11 @@
         
         [self presentViewController:alert animated:YES completion:NULL];
         //加载alert控制器。
-        
-    }
-    
-
+}
+}
+- (IBAction)pressIdentyBtn:(id)sender {
+    //从storyboard里面通过storyboardID取出对应的vc
+    UITableViewController *purple = [self.storyboard instantiateViewControllerWithIdentifier:@"userLogin"];
+    [self presentViewController:purple animated:YES completion:nil];
 }
 @end

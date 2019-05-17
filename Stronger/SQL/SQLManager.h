@@ -19,6 +19,7 @@
 -(UserModel *)searchWithUserId:(UserModel *)model;
 
 -(int)insert:(UserModel *)model;
+-(int)deleteData:(UserModel *)model;
 
 -(NSArray *)load;
 -(NSArray *)reloadData:(UserModel *)model;

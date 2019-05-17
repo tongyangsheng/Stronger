@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AppointmentViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *mainImage;
 @property (weak, nonatomic) IBOutlet UILabel *mainNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *userIdLabel;
 @property (weak, nonatomic) IBOutlet UITextField *userIdTextField;

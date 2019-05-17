@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppiontmentHomeViewController : UITableViewController
-
+@interface AppiontmentHomeViewController : UIViewController
+<UITableViewDelegate,UITableViewDataSource>
+{
+    UITableView* _tableview;
+    NSMutableArray* _arrayTest;
+}
 @end

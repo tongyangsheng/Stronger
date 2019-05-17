@@ -39,6 +39,7 @@
         model.date=self.dateTextField.text;
         model.place=self.placeTextField.text;
         model.time=self.timeTextField.text;
+        
         UserModel *result=[[SQLManager shareManager]searchWithUserId:model];
          [[SQLManager shareManager]insert:model];
         AppiontmentHomeViewController *honeView = segue.destinationViewController;

@@ -8,6 +8,7 @@
 
 #import "SQLManager.h"
 
+
 @implementation SQLManager
 #define  kNameFile (@"MachineAppiontment.sqlite")
 
@@ -30,7 +31,7 @@ static SQLManager *manager=nil;
 }
 -(void)creatDataBaseTableIfNeeded{
     NSString *writetablePath=[self applicationDocumentsDirectoryFile];
-    NSLog(@"数据库地址是：%@",writetablePath);
+    NSLog(@"器材数据库地址是：%@",writetablePath);
     if(sqlite3_open([writetablePath UTF8String], &db)!=SQLITE_OK)
     {//SQLITE_OK表示打开成功
         //失败
@@ -38,7 +39,7 @@ static SQLManager *manager=nil;
         NSAssert(NO, @"数据库打开失败1");
     }else{
         char *err;
-        NSString *createSQL=[NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS AppiontmentTable(idUserNumber INT PRIMARY KEY,userName TEXT,machineType TEXT,machineId,date TEXT,place TEXT,time TEXT);"];
+        NSString *createSQL=[NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS AppiontmentTable(idUserNumber INT PRIMARY KEY,userName TEXT,machineType TEXT,machineId TEXT,date TEXT,place TEXT,time TEXT);"];
         if(sqlite3_exec(db, [createSQL UTF8String], NULL, NULL, &err)!=SQLITE_OK)
         {
             //失败
@@ -55,7 +56,7 @@ static SQLManager *manager=nil;
         NSAssert(NO, @"数据库打开失败2");
     }else
     {
-       NSString *qsql=@"SELECT idUserNumber,userName,machineType,machineId,data,place,time FROM AppiontmentTable where idUserNumber = ?";
+       NSString *qsql=@"SELECT idUserNumber,userName,machineType,machineId,date,place,time FROM AppiontmentTable where idUserNumber = ?";
         
         sqlite3_stmt *statement;//用户对象
         //   1.数据库对象
@@ -314,4 +315,32 @@ return nil;
     }
     return nil;
 }
+//
+-(int)deleteData:(UserModel *)model
+{
+    
+    NSString *path=[self applicationDocumentsDirectoryFile];
+    
+    if(sqlite3_open([path UTF8String], &db)!=SQLITE_OK){
+        sqlite3_close(db);
+        NSLog(@"打开失败");
+    }
+    else{
+        NSString *sql=@"delete from AppiontmentTable where idUserNumber = ?";
+        
+        sqlite3_stmt *statement;
+        NSLog(@"删除方法");
+        if(sqlite3_prepare_v2(db,[sql UTF8String], -1,&statement, NULL)==SQLITE_OK){
+            sqlite3_bind_text( statement, 1, [model.idUserNumber UTF8String], -1, NULL);
+            
+            if(sqlite3_step(statement)!=SQLITE_DONE ){
+                NSLog(@"删除失败");
+            }
+            sqlite3_finalize(statement);
+            sqlite3_close(db);
+        }
+    }
+    return 0;
+}
+
 @end

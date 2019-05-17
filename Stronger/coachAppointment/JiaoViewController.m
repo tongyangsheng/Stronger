@@ -7,20 +7,25 @@
 //
 
 #import "JiaoViewController.h"
+#import "cAppointFirstViewController.h"
 #define IDENTIFY @"identify"
+
+NSIndexPath *cellRow;
+
 @interface JiaoViewController ()
 @property (copy,nonatomic)  NSArray *datas;
 @property (nonatomic) BOOL nibRegistered;
 @end
 
 @implementation JiaoViewController
+
 @synthesize datas;
 
 @synthesize nibRegistered;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    datas=@[@"童阳升",@"陈珍益",@"张校绮",@"宓甜",@"徐录铭"];
+    datas=@[@"Tony",@"Jack",@"Jessic",@"Herry",@"LuLu"];
     self.table.delegate=self;
     self.table.dataSource=self;
 }
@@ -48,13 +53,17 @@
     return [datas count];
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row % 2 == 0) {
-        ViewController *oneController = [[self storyboard]instantiateViewControllerWithIdentifier:@"view1"];
-        [[self navigationController] pushViewController:oneController animated:YES];
-    } else {
-        ViewController2 *twoController = [[self storyboard]instantiateViewControllerWithIdentifier:@"view2"];
-        [[self navigationController] pushViewController:twoController animated:YES];
-    }
+    
+    UITableViewCell *cell=[self.table cellForRowAtIndexPath:indexPath];
+    
+    NSIndexPath *indexPath1=[self.table indexPathForCell:cell];
+    
+    cellRow=indexPath1;
+    
+    cAppointFirstViewController *one=[[self storyboard]instantiateViewControllerWithIdentifier:@"view2"];
+    [[self navigationController]pushViewController:one animated:YES];
+    
+    
 }
 /*
 #pragma mark - Navigation

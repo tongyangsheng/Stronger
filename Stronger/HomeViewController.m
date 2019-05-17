@@ -33,7 +33,7 @@
     sv.backgroundColor=[UIColor whiteColor];
     
     for (int i=0; i<2; i++) {
-        NSString* strName=[NSString stringWithFormat:@"%d.jpg",i+1];
+        NSString* strName=[NSString stringWithFormat:@"1.png"];
         
         UIImage* image=[UIImage imageNamed:strName];
         

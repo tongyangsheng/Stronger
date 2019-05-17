@@ -28,10 +28,17 @@
 		13AE97E0207B1A4000B3FE11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AE97DF207B1A4000B3FE11 /* ViewController.m */; };
 		13DFBC792079B57700CBB6AF /* OnAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DFBC782079B57700CBB6AF /* OnAnalysisViewController.m */; };
 		13E657A61FD3FBC400060B5B /* AppiontmentHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E657A51FD3FBC300060B5B /* AppiontmentHomeViewController.m */; };
-		13ECF9B51F9F18EC0074C75D /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13ECF9B11F9F18EC0074C75D /* 1.jpg */; };
-		13ECF9B61F9F18EC0074C75D /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13ECF9B21F9F18EC0074C75D /* 2.jpg */; };
-		13ECF9B71F9F18EC0074C75D /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13ECF9B31F9F18EC0074C75D /* 3.jpg */; };
-		13ECF9B81F9F18EC0074C75D /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13ECF9B41F9F18EC0074C75D /* 4.jpg */; };
+		EFB213C6228D6183005485E8 /* coachSQL.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB213C5228D6183005485E8 /* coachSQL.m */; };
+		EFB213CA228D621B005485E8 /* coachModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB213C9228D621B005485E8 /* coachModel.m */; };
+		EFD1C718228CECA7006104F2 /* ManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD1C717228CECA7006104F2 /* ManagerViewController.m */; };
+		EFD1C71C228CF4E2006104F2 /* contentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD1C71A228CF4E2006104F2 /* contentCell.m */; };
+		EFD1C71D228CF4E2006104F2 /* contentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD1C71B228CF4E2006104F2 /* contentCell.xib */; };
+		EFDC9098228D5A1F0097178A /* CoachViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDC9097228D5A1F0097178A /* CoachViewController.m */; };
+		EFDC90A4228D5CB00097178A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDC90A3228D5CB00097178A /* FirstViewController.m */; };
+		EFFAA615228E497000952370 /* cAppointFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFAA614228E497000952370 /* cAppointFirstViewController.m */; };
+		EFFAA619228E4C8400952370 /* coachAppointCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFAA617228E4C8400952370 /* coachAppointCell.m */; };
+		EFFAA61A228E4C8400952370 /* coachAppointCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFFAA618228E4C8400952370 /* coachAppointCell.xib */; };
+		EFFAA623228E5BEA00952370 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFAA622228E5BEA00952370 /* MessageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,10 +80,26 @@
 		13DFBC782079B57700CBB6AF /* OnAnalysisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnAnalysisViewController.m; sourceTree = "<group>"; };
 		13E657A41FD3FBC300060B5B /* AppiontmentHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppiontmentHomeViewController.h; sourceTree = "<group>"; };
 		13E657A51FD3FBC300060B5B /* AppiontmentHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppiontmentHomeViewController.m; sourceTree = "<group>"; };
-		13ECF9B11F9F18EC0074C75D /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		13ECF9B21F9F18EC0074C75D /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		13ECF9B31F9F18EC0074C75D /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
-		13ECF9B41F9F18EC0074C75D /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		EFB213C4228D6183005485E8 /* coachSQL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = coachSQL.h; sourceTree = "<group>"; };
+		EFB213C5228D6183005485E8 /* coachSQL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coachSQL.m; sourceTree = "<group>"; };
+		EFB213C8228D621B005485E8 /* coachModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = coachModel.h; sourceTree = "<group>"; };
+		EFB213C9228D621B005485E8 /* coachModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coachModel.m; sourceTree = "<group>"; };
+		EFD1C716228CECA7006104F2 /* ManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagerViewController.h; sourceTree = "<group>"; };
+		EFD1C717228CECA7006104F2 /* ManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagerViewController.m; sourceTree = "<group>"; };
+		EFD1C719228CF4E2006104F2 /* contentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = contentCell.h; sourceTree = "<group>"; };
+		EFD1C71A228CF4E2006104F2 /* contentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = contentCell.m; sourceTree = "<group>"; };
+		EFD1C71B228CF4E2006104F2 /* contentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = contentCell.xib; sourceTree = "<group>"; };
+		EFDC9096228D5A1F0097178A /* CoachViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoachViewController.h; sourceTree = "<group>"; };
+		EFDC9097228D5A1F0097178A /* CoachViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoachViewController.m; sourceTree = "<group>"; };
+		EFDC90A2228D5CB00097178A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		EFDC90A3228D5CB00097178A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		EFFAA613228E497000952370 /* cAppointFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cAppointFirstViewController.h; sourceTree = "<group>"; };
+		EFFAA614228E497000952370 /* cAppointFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cAppointFirstViewController.m; sourceTree = "<group>"; };
+		EFFAA616228E4C8400952370 /* coachAppointCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = coachAppointCell.h; sourceTree = "<group>"; };
+		EFFAA617228E4C8400952370 /* coachAppointCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coachAppointCell.m; sourceTree = "<group>"; };
+		EFFAA618228E4C8400952370 /* coachAppointCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = coachAppointCell.xib; sourceTree = "<group>"; };
+		EFFAA621228E5BEA00952370 /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		EFFAA622228E5BEA00952370 /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,27 +143,24 @@
 		1389F49C1F9C40B1005CE5B9 /* Stronger */ = {
 			isa = PBXGroup;
 			children = (
+				EFFAA60F228E487200952370 /* coachAppointment */,
+				EFFAA60D228E480B00952370 /* equipmentAppointment */,
+				EFFAA60E228E484000952370 /* TableCell */,
+				EFB213C7228D6200005485E8 /* Model */,
+				EFB213C3228D6157005485E8 /* SQL */,
+				EFDC90A1228D5C420097178A /* coach */,
+				EFD1C715228CEC62006104F2 /*  Login */,
 				1389F49D1F9C40B1005CE5B9 /* AppDelegate.h */,
 				1389F49E1F9C40B1005CE5B9 /* AppDelegate.m */,
+				EFDC9097228D5A1F0097178A /* CoachViewController.m */,
+				EFDC9096228D5A1F0097178A /* CoachViewController.h */,
 				1389F4A31F9C40B1005CE5B9 /* Main.storyboard */,
 				13AE97DE207B1A4000B3FE11 /* ViewController.h */,
 				13AE97DF207B1A4000B3FE11 /* ViewController.m */,
-				13AE97DB207B191200B3FE11 /* JiaoViewController.h */,
-				13AE97DC207B191200B3FE11 /* JiaoViewController.m */,
-				1327C7261FC439F900216328 /* SQLManager.h */,
-				1327C7271FC439F900216328 /* SQLManager.m */,
-				1327C7201FC3DE7C00216328 /* UserModel.h */,
-				1327C7211FC3DE7C00216328 /* UserModel.m */,
-				1327C7231FC3E0F900216328 /* AppointmentViewController.h */,
-				1327C7241FC3E0F900216328 /* AppointmentViewController.m */,
-				13E657A41FD3FBC300060B5B /* AppiontmentHomeViewController.h */,
-				13E657A51FD3FBC300060B5B /* AppiontmentHomeViewController.m */,
 				1389F4A61F9C40B1005CE5B9 /* Assets.xcassets */,
 				1389F4A81F9C40B1005CE5B9 /* LaunchScreen.storyboard */,
 				1389F4AB1F9C40B1005CE5B9 /* Info.plist */,
 				1389F4AC1F9C40B1005CE5B9 /* main.m */,
-				1389F4B31F9C4159005CE5B9 /* LoginViewController.h */,
-				1389F4B41F9C4159005CE5B9 /* LoginViewController.m */,
 				13149D821F9EC677001A859A /* HomeViewController.h */,
 				13149D831F9EC677001A859A /* HomeViewController.m */,
 				13149D851F9EC6CB001A859A /* CheckViewController.h */,
@@ -163,13 +183,88 @@
 		13ECF9B01F9F18EC0074C75D /* images */ = {
 			isa = PBXGroup;
 			children = (
-				13ECF9B11F9F18EC0074C75D /* 1.jpg */,
-				13ECF9B21F9F18EC0074C75D /* 2.jpg */,
-				13ECF9B31F9F18EC0074C75D /* 3.jpg */,
-				13ECF9B41F9F18EC0074C75D /* 4.jpg */,
 			);
 			name = images;
 			path = ../images;
+			sourceTree = "<group>";
+		};
+		EFB213C3228D6157005485E8 /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				1327C7261FC439F900216328 /* SQLManager.h */,
+				1327C7271FC439F900216328 /* SQLManager.m */,
+				EFB213C4228D6183005485E8 /* coachSQL.h */,
+				EFB213C5228D6183005485E8 /* coachSQL.m */,
+			);
+			path = SQL;
+			sourceTree = "<group>";
+		};
+		EFB213C7228D6200005485E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1327C7201FC3DE7C00216328 /* UserModel.h */,
+				1327C7211FC3DE7C00216328 /* UserModel.m */,
+				EFB213C8228D621B005485E8 /* coachModel.h */,
+				EFB213C9228D621B005485E8 /* coachModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFD1C715228CEC62006104F2 /*  Login */ = {
+			isa = PBXGroup;
+			children = (
+				EFD1C716228CECA7006104F2 /* ManagerViewController.h */,
+				EFD1C717228CECA7006104F2 /* ManagerViewController.m */,
+				1389F4B31F9C4159005CE5B9 /* LoginViewController.h */,
+				1389F4B41F9C4159005CE5B9 /* LoginViewController.m */,
+			);
+			path = " Login";
+			sourceTree = "<group>";
+		};
+		EFDC90A1228D5C420097178A /* coach */ = {
+			isa = PBXGroup;
+			children = (
+				EFDC90A2228D5CB00097178A /* FirstViewController.h */,
+				EFDC90A3228D5CB00097178A /* FirstViewController.m */,
+			);
+			path = coach;
+			sourceTree = "<group>";
+		};
+		EFFAA60D228E480B00952370 /* equipmentAppointment */ = {
+			isa = PBXGroup;
+			children = (
+				1327C7231FC3E0F900216328 /* AppointmentViewController.h */,
+				1327C7241FC3E0F900216328 /* AppointmentViewController.m */,
+				13E657A41FD3FBC300060B5B /* AppiontmentHomeViewController.h */,
+				13E657A51FD3FBC300060B5B /* AppiontmentHomeViewController.m */,
+			);
+			path = equipmentAppointment;
+			sourceTree = "<group>";
+		};
+		EFFAA60E228E484000952370 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				EFD1C719228CF4E2006104F2 /* contentCell.h */,
+				EFD1C71A228CF4E2006104F2 /* contentCell.m */,
+				EFD1C71B228CF4E2006104F2 /* contentCell.xib */,
+				EFFAA616228E4C8400952370 /* coachAppointCell.h */,
+				EFFAA617228E4C8400952370 /* coachAppointCell.m */,
+				EFFAA618228E4C8400952370 /* coachAppointCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		EFFAA60F228E487200952370 /* coachAppointment */ = {
+			isa = PBXGroup;
+			children = (
+				13AE97DB207B191200B3FE11 /* JiaoViewController.h */,
+				13AE97DC207B191200B3FE11 /* JiaoViewController.m */,
+				EFFAA613228E497000952370 /* cAppointFirstViewController.h */,
+				EFFAA614228E497000952370 /* cAppointFirstViewController.m */,
+				EFFAA621228E5BEA00952370 /* MessageViewController.h */,
+				EFFAA622228E5BEA00952370 /* MessageViewController.m */,
+			);
+			path = coachAppointment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,12 +325,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFFAA61A228E4C8400952370 /* coachAppointCell.xib in Resources */,
+				EFD1C71D228CF4E2006104F2 /* contentCell.xib in Resources */,
 				1389F4AA1F9C40B1005CE5B9 /* LaunchScreen.storyboard in Resources */,
 				13AE97D7207B17DA00B3FE11 /* Cell.xib in Resources */,
-				13ECF9B81F9F18EC0074C75D /* 4.jpg in Resources */,
-				13ECF9B51F9F18EC0074C75D /* 1.jpg in Resources */,
-				13ECF9B61F9F18EC0074C75D /* 2.jpg in Resources */,
-				13ECF9B71F9F18EC0074C75D /* 3.jpg in Resources */,
 				1389F4A71F9C40B1005CE5B9 /* Assets.xcassets in Resources */,
 				1389F4A51F9C40B1005CE5B9 /* Main.storyboard in Resources */,
 			);
@@ -250,19 +343,28 @@
 			files = (
 				13AE97D3207B174A00B3FE11 /* Cell.m in Sources */,
 				1327C7281FC439F900216328 /* SQLManager.m in Sources */,
+				EFD1C718228CECA7006104F2 /* ManagerViewController.m in Sources */,
+				EFFAA615228E497000952370 /* cAppointFirstViewController.m in Sources */,
+				EFD1C71C228CF4E2006104F2 /* contentCell.m in Sources */,
 				1389F4AD1F9C40B1005CE5B9 /* main.m in Sources */,
 				1327C7251FC3E0F900216328 /* AppointmentViewController.m in Sources */,
 				1389F49F1F9C40B1005CE5B9 /* AppDelegate.m in Sources */,
+				EFDC90A4228D5CB00097178A /* FirstViewController.m in Sources */,
+				EFB213C6228D6183005485E8 /* coachSQL.m in Sources */,
 				1389F4B51F9C4159005CE5B9 /* LoginViewController.m in Sources */,
 				13149D871F9EC6CB001A859A /* CheckViewController.m in Sources */,
 				13149D8A1F9EC708001A859A /* ReadViewController.m in Sources */,
 				13149D841F9EC677001A859A /* HomeViewController.m in Sources */,
 				13AE97E0207B1A4000B3FE11 /* ViewController.m in Sources */,
+				EFDC9098228D5A1F0097178A /* CoachViewController.m in Sources */,
 				1327C7221FC3DE7C00216328 /* UserModel.m in Sources */,
+				EFB213CA228D621B005485E8 /* coachModel.m in Sources */,
 				13DFBC792079B57700CBB6AF /* OnAnalysisViewController.m in Sources */,
 				13E657A61FD3FBC400060B5B /* AppiontmentHomeViewController.m in Sources */,
 				136BA948207B3902001653C3 /* ViewController2.m in Sources */,
+				EFFAA623228E5BEA00952370 /* MessageViewController.m in Sources */,
 				13149D8D1F9EC748001A859A /* CenterViewController.m in Sources */,
+				EFFAA619228E4C8400952370 /* coachAppointCell.m in Sources */,
 				13AE97DD207B191200B3FE11 /* JiaoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
