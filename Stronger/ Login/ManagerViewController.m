@@ -19,13 +19,23 @@ NSString* coachIdAll;
 
 - (void)viewDidLoad {
     
-    extern NSString* coachIdAll;
-    
-    coachIdAll=_nameTextField.text;
+    _nameTextField.delegate=self;
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+}
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    extern NSString* coachIDAll;
+    
+    NSString *inputString = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    
+    coachIdAll=inputString;
+    
+    NSLog(@"inputString: %@", inputString);
+    
+    return YES;
 }
 
 /*

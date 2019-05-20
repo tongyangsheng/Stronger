@@ -30,11 +30,13 @@
     
     model.coachID=coachIdAll;
     
+
+    
     coachModel *result=[[coachSQL shareManager]searchWithUserId:model];
     
     _catTime.text=result.coachTime;
     
-    NSLog(@"%@",result.coachTime);
+
     
     _catClass.text=result.coachClass;
     
