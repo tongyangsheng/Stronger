@@ -1,0 +1,8 @@
+language:
+  - objective-c
+osx_image: xcode10.2.1
+script:
+ - xcodebuild -scheme Stronger -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone Xs Max,OS=12.4.1' build test
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
